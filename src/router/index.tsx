@@ -12,13 +12,14 @@ export const router = createBrowserRouter([
                 element: <div>Inicio</div>
             },
             {
-                path: 'clothes',
-                element: <div>Ropa</div>
+                path: 'man',
+                element: <div>Ropa de Hombre</div>
             },
             {
-                path: 'about',
-                element: <div>Sobre Nosotros</div>
+                path: 'woman',
+                element: <div>Ropa de Mujer</div>
             },
+            
         
         ]
 
