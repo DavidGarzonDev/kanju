@@ -1,5 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { RootLayout } from '../layouts/RootLayout';
+import { HomePage } from '../pages/HomePage';
+import {Woman} from "../pages/Woman";
+import  { Man }  from "../pages/Man";
+
 
 export const router = createBrowserRouter([
     {
@@ -9,15 +13,15 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <div>Inicio</div>
+                element: <HomePage/>
             },
             {
                 path: 'man',
-                element: <div>Ropa de Hombre</div>
+                element: <Man/>
             },
             {
                 path: 'woman',
-                element: <div>Ropa de Mujer</div>
+                element: <Woman/>
             },
             
         
