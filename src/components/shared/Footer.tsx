@@ -14,7 +14,7 @@ export const Footer = () => {
 
                 </p>
                 <p className="text-xs">Recibe promociones y novedades en tu correo</p>
-                <div className="border border-gray-800 flex items-center gap-2 px-3 py-2 rounded-b-full  ">
+                <div className="border border-gray-800 flex items-center gap-2 px-3 py-2 rounded-full  ">
                     <input type="email" 
                     placeholder="Ingresa tu correo"
                     className="pl-2 bg-black text-slate-200 w-full focus: outline-none"
