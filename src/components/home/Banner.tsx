@@ -6,7 +6,7 @@ export const Banner = () => {
             {/* IMAGEN DE FONDO */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-90 h-full"
-                style={{ backgroundImage: "url('https://i.postimg.cc/DzQqqw2j/banner-2.png')" }}
+                style={{ backgroundImage: "url('/img/banner.png')" }}
             />
             {/* OVERLAY */}
             <div className="absolute inset-0 bg-black opacity-20" />
@@ -14,7 +14,7 @@ export const Banner = () => {
             {/* CONTENIDO */}
             <div className="relative z-10 flex flex-col items-center justify-center py-20 px-4 text-center lg:py-40 lg:px-8">
                 <h1 className="text-4xl font-extrabold mb-4 md:text-6xl tracking-tight uppercase">
-                    Viste Diferente. Viste K a n j u.
+                    Viste Diferente. <br /> Viste K a n j u.
                 </h1>
                 <p className="text-lg mb-8 md:text-xl max-w-2xl">
                     Ropa creada para los que no siguen a nadie. Estilo urbano, rebelde y sin miedo a ser distinto.
