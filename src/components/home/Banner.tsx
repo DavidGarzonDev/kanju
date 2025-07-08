@@ -1,29 +1,39 @@
 import { Link } from "react-router-dom"
 
-
 export const Banner = () => {
-    return <div className="relative bg-gray-950 text-white">
-        {/*  IMAGEN DE FONDO */}
-        <div className="absolute inset-0 bg-cover bg-center opacity-70 h-full"
-            style={{ backgroundImage: "url('/img/banner.webp')" }}
-        />
-        {/*  OVERLAY */}
-        <div className="absolute inset-0 bg-black opacity-50" />
-        {/*  CONTENIDO */}
+    return (
+        <div className="relative bg-black text-white">
+            {/* IMAGEN DE FONDO */}
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-90 h-full"
+                style={{ backgroundImage: "url('https://i.postimg.cc/DzQqqw2j/banner-2.png')" }}
+            />
+            {/* OVERLAY */}
+            <div className="absolute inset-0 bg-black opacity-20" />
 
-        <div className="relative z-10 flex flex-col items-center justify-center py-20 px-4 text-center lg:py-30 lg:px-8 ">
-            <h1 className="text-4xl font-bold mb-4 md:text-6xl ">Bienvenido a Kanju</h1>
-            <p className="text-lg mb-8 md:text-xl ">
-                Mira lo que hay de nuevo en nuestra tienda. ¡Nuevos productos, nuevas ofertas y mucho más!
-
-            </p>
-            <Link to="/man" className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300 ease-in-out mb-5">
-                Ropa hombre
-            </Link>
-            <Link to="/woman" className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300 ease-in-out">
-                Ropa mujer
-            </Link>
-
+            {/* CONTENIDO */}
+            <div className="relative z-10 flex flex-col items-center justify-center py-20 px-4 text-center lg:py-40 lg:px-8">
+                <h1 className="text-4xl font-extrabold mb-4 md:text-6xl tracking-tight uppercase">
+                    Viste Diferente. Viste K a n j u.
+                </h1>
+                <p className="text-lg mb-8 md:text-xl max-w-2xl">
+                    Ropa creada para los que no siguen a nadie. Estilo urbano, rebelde y sin miedo a ser distinto.
+                </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                    <Link
+                        to="/man"
+                        className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300"
+                    >
+                        Ropa Hombre
+                    </Link>
+                    <Link
+                        to="/woman"
+                        className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300"
+                    >
+                        Ropa Mujer
+                    </Link>
+                </div>
+            </div>
         </div>
-    </div>
-}
+    );
+};
