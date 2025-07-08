@@ -6,7 +6,7 @@ export const Banner = () => {
             {/* IMAGEN DE FONDO */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-90 h-full"
-                style={{ backgroundImage: "url('/img/banner.png')" }}
+                style={{ backgroundImage: "url('/img/banner-new.webp')" }}
             />
             {/* OVERLAY */}
             <div className="absolute inset-0 bg-black opacity-20" />
