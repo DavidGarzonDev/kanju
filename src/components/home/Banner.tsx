@@ -12,7 +12,7 @@ export const Banner = () => {
             <div className="absolute inset-0 bg-black opacity-20" />
 
             {/* CONTENIDO */}
-            <div className="relative z-10 flex flex-col items-center justify-center py-20 px-4 text-center lg:py-40 lg:px-8">
+            <div className="relative z-10 flex flex-col items-center justify-center py-30 px-4 text-center lg:py-40 lg:px-8 ">
                 <h1 className="text-4xl font-extrabold mb-4 md:text-6xl tracking-tight uppercase">
                     Viste Diferente. <br /> Viste K a n j u.
                 </h1>
