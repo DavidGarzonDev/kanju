@@ -1,63 +1,61 @@
-import { BiChevronRight } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { socialLinks } from "../../constants/Links"
 
 export const Footer = () => {
     return (
-        <footer className="py-12 bg-black px-12 mt-10 flex justify-between gap-10 text-slate-200 text-sm flex-wrap md:flex-nowrap">
-            <Link to="/" className={`text-2xl font-bold tracking-tighter transition-all text-white flex-1`}>
-                K A N J U
-            </Link>
-            <div className="flex flex-col gap-4 flex-1">
-                <p className="font-semibold uppercase tracking-tighter" >
-                    Suscribete
+        <footer className="py-12 bg-black px-8 md:px-16 text-slate-200 text-sm">
 
-                </p>
-                <p className="text-xs">Recibe promociones y novedades en tu correo</p>
-                <div className="border border-gray-800 flex items-center gap-2 px-3 py-2 rounded-full  ">
-                    <input type="email" 
-                    placeholder="Ingresa tu correo"
-                    className="pl-2 bg-black text-slate-200 w-full focus: outline-none"
-                    />
-                    <button className="text-slate-200">
-                        <BiChevronRight size={20} />
-                    </button>
+            <div className="flex flex-wrap md:flex-nowrap gap-10">
+
+                {/* Logo */}
+                <div className="flex-1">
+                    <Link to="/" className="text-3xl font-bold text-white tracking-widest uppercase hover:text-red-500 transition-colors">
+                        K A N J U
+                    </Link>
                 </div>
 
-            </div>
-            <div className="flex flex-col gap-4 flex-1">
-                <p className="font-semibold uppercase tracking-tighter">
-                    Politicas de privacidad
-                </p>
-                <nav className=" flex flex-col gap-2 text-xs font-medium">
-                    <Link to="#">Productos</Link>
-                    <Link to="#" className="text-slate-200 hover:text-white">Politicas de privacidad</Link>
-                    <Link to="#" className="text-slate-200 hover:text-white">Terminos de uso</Link>
-                </nav>
-            </div>
-            <div className="flex flex-col gap-4 flex-1">
-                <p className="font-semibold uppercase tracking-tighter">
-                    Siguenos
-                </p>
-                <p className="text-xs leading-6">
-                    Encuentranos en nuestras redes sociales y enterate de las ultimas novedades, promociones y mas.
-                </p>
-                <div className="flex ">
-                    {
-                        socialLinks.map((link) => (
-                            <a 
-                            key={link.id} 
-                            href={link.href}
-                            target="_blank" 
-                            rel="noreferrer" className="text-slate-300 border border-gray-800 w-full h-full py-3.5 flex items-center justify-center transition-all hover:text-red-600" >
+                {/* Navegación */}
+                <div className="flex-1 space-y-4">
+                    <p className="font-semibold uppercase tracking-tight">
+                        Políticas de Privacidad
+                    </p>
+                    <nav className="flex flex-col gap-2 text-xs font-medium">
+                        <Link to="#" className="hover:text-red-500 transition-colors">Productos</Link>
+                        <Link to="#" className="hover:text-red-500 transition-colors">Políticas de Privacidad</Link>
+                        <Link to="#" className="hover:text-red-500 transition-colors">Términos de Uso</Link>
+                    </nav>
+                </div>
+
+                {/* Redes Sociales */}
+                <div className="flex-1 space-y-4">
+                    <p className="font-semibold uppercase tracking-tight">
+                        Síguenos
+                    </p>
+                    <p className="text-xs leading-5">
+                        Encuéntranos en nuestras redes y entérate de las últimas novedades, promociones y mucho más.
+                    </p>
+                    <div className="flex gap-3">
+                        {socialLinks.map((link) => (
+                            <a
+                                key={link.id}
+                                href={link.href}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-slate-300 border border-gray-800 w-10 h-10 flex items-center justify-center rounded-md hover:text-red-600 hover:border-red-600 transition-all"
+                            >
                                 {link.icon}
                             </a>
-                        ))
-                    }
-
+                        ))}
+                    </div>
                 </div>
 
             </div>
+
+            {/* Línea inferior */}
+            <div className="mt-10 border-t border-gray-800 pt-4 text-xs text-center text-slate-500">
+                © {new Date().getFullYear()} KANJU. Todos los derechos reservados.
+            </div>
+
         </footer>
     )
 }
