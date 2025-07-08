@@ -5,7 +5,7 @@ export const Newsletter = () => {
       {/* Imagen de fondo con capa oscura */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(https://i.postimg.cc/Z0kttc15/Chat-GPT-Image-8-jul-2025-01-21-03-p-m.png)" }}
+        style={{ backgroundImage: "url(/img/lobo.webp)" }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
