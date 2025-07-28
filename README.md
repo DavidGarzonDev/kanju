@@ -22,30 +22,6 @@ Este proyecto busca ofrecer una **experiencia visual potente**, en tonos oscuros
 - 🛒 **Carrito de compras funcional**.
 - 🧩 Proyecto **modular y escalable** para integrar login, pagos o más funciones en el futuro.
 
----
-
-## 📦 Instalación del Proyecto
-
-1. Clona el repositorio oficial:
-
-```bash
-git clone https://github.com/DavidGarzonDev/kanju.git
-````
-
-2. Instala las dependencias:
-
-```bash
-cd kanju
-npm install
-```
-
-3. Inicia el entorno de desarrollo:
-
-```bash
-npm run dev
-```
-
-👉 Por defecto, estará disponible en `http://localhost:5173`.
 
 ---
 
