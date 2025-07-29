@@ -25,7 +25,7 @@ const features = [
 
 export const FeatureGrid = () => {
     return (
-        <div className="grid gap-8 mt-6 mb-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <div className="grid gap-8 mt-6 -mb-25 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
             {features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-6">
                     {feature.icon}
