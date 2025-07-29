@@ -40,12 +40,14 @@ const CardProduct = ({
                         className="w-full h-full object-cover transition-all duration-300"
                     />
                 </div>
+                
             </Link>
 
             <div className="flex flex-col gap-1 items-start text-center">
                 <p className="text-[17px] font-medium">{name}</p>
                 <p className="text-gray-400 text-sm capitalize">{category}</p>
                 <p className="text-1xl font-medium text-black">${price}</p>
+                <p className="text-gray-400 text-sm capitalize">{color}</p>
                 {!available && (
                     <span className="text-xs text-red-500 mt-1">Sin stock</span>
                 )}
