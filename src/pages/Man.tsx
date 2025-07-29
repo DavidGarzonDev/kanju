@@ -4,6 +4,7 @@ interface Props {
   products: any[];
 }
 
+
 export const Man = ({ products }: Props) => {
   
   if (!products || products.length === 0) {
