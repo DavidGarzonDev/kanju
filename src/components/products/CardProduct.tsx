@@ -33,17 +33,17 @@ const CardProduct = ({
                 onMouseLeave={() => setHovered(false)}
                 className="block"
             >
-                <div className="relative aspect-[4/4] w-full overflow-hidden bg-white">
+                <div className="relative aspect-[4/4] w-full overflow-hidden bg-white rounded-xl shadow-sm">
                     <img
                         src={img}
                         alt={name}
-                        className={`absolute inset-0 w-full h-80 object-cover transition-opacity duration-300 ${hovered && hoverImg ? 'opacity-0' : 'opacity-100'}`}
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hovered && hoverImg ? 'opacity-0' : 'opacity-100'}`}
                     />
                     {hoverImg && (
                         <img
                             src={hoverImg}
                             alt={`${name} hover`}
-                            className={`absolute inset-0 w-full h-80 object-cover transition-opacity duration-300 ${hovered ? 'opacity-100' : 'opacity-0'}`}
+                            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${hovered ? 'opacity-100' : 'opacity-0'}`}
                         />
                     )}
                 </div>
