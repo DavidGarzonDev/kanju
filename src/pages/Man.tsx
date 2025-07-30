@@ -1,28 +1,26 @@
 import CardProduct from "../components/products/CardProduct";
+import { ContainerFilters } from "../components/products/ContainerFilters";
 
 interface Props {
   products: any[];
 }
 
-
 export const Man = ({ products }: Props) => {
-  
   if (!products || products.length === 0) {
     return <p className="text-center my-32 text-xl">Cargando productos...</p>;
   }
 
   return (
     <>
-      <h1 className="text-5xl font-semibold text-center mb-12">
+      <h1 className="text-5xl font-semibold text-center mb-11">
         Ropa de Hombre
       </h1>
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-        {/* Filtros */}
-        <div>Filtros</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0">
+        <ContainerFilters />
 
-        <div className="col-span-2 lg:col-span-2 xl:col-span-4 flex flex-col gap-12">
-          <div className="grid grid-cols-2 gap-3 gap-y-10 xl:grid-cols-4">
+        <div className="col-span-2 lg:col-span-2 xl:col-span-4 flex flex-col gap-0">
+          <div className="grid grid-cols-2 xl:grid-cols-3 w-full h-full gap-0">
             {products.map((product, index) => (
               <CardProduct
                 key={product.id || `${product.slug}-${index}`}
