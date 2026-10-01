@@ -1,39 +1,11 @@
 import { Link } from "react-router-dom"
 
-export const Banner = () => {
-    return (
-        <div className="relative bg-black text-white">
-            {/* IMAGEN DE FONDO */}
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-90 h-full"
-                style={{ backgroundImage: "url('/img/banner-new.webp')" }}
-            />
-            {/* OVERLAY */}
-            <div className="absolute inset-0 bg-black opacity-20" />
-
-            {/* CONTENIDO */}
-            <div className="relative z-10 flex flex-col items-center justify-center py-30 px-4 text-center lg:py-40 lg:px-8 ">
-                <h1 className="text-4xl font-extrabold mb-4 md:text-6xl tracking-tight uppercase">
-                    Viste Diferente. <br /> Viste K a n j u.
-                </h1>
-                <p className="text-lg mb-8 md:text-xl max-w-2xl">
-                    Ropa creada para los que no siguen a nadie. Estilo urbano, rebelde y sin miedo a ser distinto.
-                </p>
-                <div className="flex flex-col md:flex-row gap-4">
-                    <Link
-                        to="/man"
-                        className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300"
-                    >
-                        Ropa Hombre
-                    </Link>
-                    <Link
-                        to="/woman"
-                        className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300"
-                    >
-                        Ropa Mujer
-                    </Link>
-                </div>
-            </div>
-        </div>
-    );
-};
+export const Banner = () => (
+  <section className="relative min-h-[620px] overflow-hidden bg-black text-white sm:min-h-[700px]">
+    <div className="absolute inset-0 bg-cover bg-center opacity-70" style={{backgroundImage:"url('/img/banner-new.webp')"}} />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-[#050505]" />
+    <div className="relative z-10 flex min-h-[620px] items-end px-6 pb-20 sm:min-h-[700px] sm:px-10 lg:px-16 lg:pb-24">
+      <div className="max-w-3xl"><p className="mb-5 text-[10px] font-bold uppercase tracking-[0.45em] text-white/60">DROP 001 / DEMONY</p><h1 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.04em] sm:text-7xl lg:text-9xl">Born<br/>from<br/>the dark.</h1><p className="mt-7 max-w-xl text-sm leading-6 text-white/65 sm:text-base">Streetwear para quienes no necesitan permiso para ser diferentes.</p><Link to="/man" className="mt-8 inline-flex border border-white px-7 py-3 text-xs font-bold uppercase tracking-[0.25em] hover:bg-white hover:text-black">Explorar drop</Link></div>
+    </div>
+  </section>
+)
